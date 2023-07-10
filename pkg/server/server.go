@@ -12,7 +12,7 @@ type HttpServer struct {
 	mux    *http.ServeMux
 }
 
-func NewHttpServer(cnf config.Config) *HttpServer {
+func NewHttpServer(cnf config.Server) *HttpServer {
 
 	return &HttpServer{
 		server: http.Server{
